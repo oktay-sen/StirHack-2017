@@ -1,26 +1,80 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
     tools:context="com.gmail.senokt16.stirhack2017.MainActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="#33b5e5"
-        android:textSize="50sp"
-        android:textStyle="bold" />
 
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
+    <FrameLayout
+        app:layout_heightPercent="50%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_wrapper">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_launcher"/>
+            </FrameLayout><!--
+            <TextView
+                android:layout_below="@id/icon_wrapper"
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="WELCOME TO\nSTIRHACK 2017"
+                android:textColor="#33b5e5"
+                android:textSize="30sp"
+                android:textStyle="bold" />-->
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_heightPercent="55%"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:textAlignment="center"
+            android:keepScreenOn="true"
+            android:textColorHint="#33b5e5"
+            android:hint="ENTER YOUR CODE"
+            android:textColor="#33b5e5"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#88FFFFFF"/>
+
+    </FrameLayout>
+    <!--
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,14 +91,26 @@
             tools:ignore="UselessParent">
 
             <Button
-                android:id="@+id/dummy_button"
+                android:id="@+id/sign_up"
                 style="?metaButtonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/dummy_button" />
+                android:text="SIGN UP" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#0099cc"/>
+
+            <Button
+                android:id="@+id/log_in"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOG IN" />
 
         </LinearLayout>
-    </FrameLayout>
+    </FrameLayout>-->
 
-</FrameLayout>
+</android.support.percent.PercentFrameLayout>
