@@ -1,10 +1,11 @@
 package com.gmail.senokt16.stirhack2017;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class User {
+public class User implements Serializable{
     public String name;
     public String university;
     public List<Language> languages;
