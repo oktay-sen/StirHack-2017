@@ -36,7 +36,7 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
         Language l;
         if (list.get(position) == null) {
             l = new Language();
-            l.name = langs.get((int) (Math.random()*(langs.size())));
+            l.name = langs.get(0);
             l.level = 0;
             list.set(position, l);
         } else {

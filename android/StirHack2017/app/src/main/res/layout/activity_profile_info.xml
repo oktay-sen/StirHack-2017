@@ -35,7 +35,19 @@
                 android:layout_height="wrap_content"
                 android:keepScreenOn="true"
                 android:textColorHint="@color/textColor"
-                android:hint="NAME"
+                android:hint="name"
+                android:textColor="@color/textColor"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:textColorHint="@color/textColor"
+                android:lines="1"
+                android:hint="username"
                 android:textColor="@color/textColor"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -46,13 +58,13 @@
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
                 android:keepScreenOn="true"
-                android:backgroundTint="#33b5e5"
+                android:backgroundTint="@color/textColor"
                 android:spinnerMode="dialog"
-                android:textColorHint="#33b5e5"
+                android:textColorHint="@color/textColor"
                 android:entries="@array/universities"
                 android:popupBackground="#000000"
                 android:hint="UNIVERSITY"
-                android:textColor="#33b5e5"
+                android:textColor="@color/textColor"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -71,6 +83,7 @@
                 android:id="@+id/add_language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
                 style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:text="ADD LANGUAGE"/>
             <android.support.v7.widget.RecyclerView
@@ -90,7 +103,7 @@
             tools:ignore="UselessParent">
 
             <Button
-                android:id="@+id/dummy_button"
+                android:id="@+id/save_button"
                 style="?metaButtonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

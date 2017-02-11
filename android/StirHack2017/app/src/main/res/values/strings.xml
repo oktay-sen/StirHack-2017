@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">StirHack 2017</string>
+    <string name="app_name">Hatch</string>
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="shared_preference">com.gmail.senokt16.stirhack2017.shared_preference_file</string>
 
     <string name="title_activity_profile_info">ProfileInfoActivity</string>
 
@@ -161,8 +163,28 @@
     </string-array>
 
     <string-array name="languages">
-        <item>4th Dimension/4D</item>
-        <item>ABAP</item>
+        <item>Java</item>
+        <item>Javascript</item>
+        <item>Python</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Objective C</item>
+        <item>Go</item>
+        <item>Haskell</item>
+        <item>Scala</item>
+        <item>PHP</item>
+        <item>SQL</item>
+        <item>Shell</item>
+        <item>R</item>
+        <item>CoffeeScript</item>
+        <item>TeX</item>
+        <item>Emacs lisp</item>
+        <item>CSS</item>
+        <item>VimL</item>
+        <item>HTML</item>
+        <item>XML</item>
         <item>ABC</item>
         <item>ActionScript</item>
         <item>Ada</item>
@@ -195,10 +217,7 @@
         <item>Boo</item>
         <item>Bourne Shell</item>
         <item>Bro</item>
-        <item>C</item>
         <item>C Shell</item>
-        <item>C#</item>
-        <item>C++</item>
         <item>C++/CLI</item>
         <item>C-Omega</item>
         <item>Caml</item>
@@ -216,7 +235,6 @@
         <item>CLU</item>
         <item>COBOL</item>
         <item>Cobra</item>
-        <item>CoffeeScript</item>
         <item>ColdFusion</item>
         <item>COMAL</item>
         <item>Common Lisp</item>
@@ -237,7 +255,6 @@
         <item>EGL</item>
         <item>Eiffel</item>
         <item>Elixir</item>
-        <item>Emacs Lisp</item>
         <item>Erlang</item>
         <item>Etoys</item>
         <item>Euphoria</item>
@@ -254,11 +271,9 @@
         <item>(Visual) FoxPro</item>
         <item>Gambas</item>
         <item>GNU Octave</item>
-        <item>Go</item>
         <item>Google AppsScript</item>
         <item>Gosu</item>
         <item>Groovy</item>
-        <item>Haskell</item>
         <item>haXe</item>
         <item>Heron</item>
         <item>HPL</item>
@@ -273,9 +288,7 @@
         <item>J</item>
         <item>J#</item>
         <item>JADE</item>
-        <item>Java</item>
         <item>Java FX Script</item>
-        <item>JavaScript</item>
         <item>JScript</item>
         <item>JScript.NET</item>
         <item>Julia</item>
@@ -325,7 +338,6 @@
         <item>NXT-G</item>
         <item>Oberon</item>
         <item>Object Rexx</item>
-        <item>Objective-C</item>
         <item>Objective-J</item>
         <item>OCaml</item>
         <item>Occam</item>
@@ -339,7 +351,6 @@
         <item>Parrot</item>
         <item>Pascal</item>
         <item>Perl</item>
-        <item>PHP</item>
         <item>Pike</item>
         <item>PILOT</item>
         <item>PL/I</item>
@@ -356,27 +367,23 @@
         <item>Pure Data</item>
         <item>Python</item>
         <item>Q</item>
-        <item>R</item>
         <item>Racket</item>
         <item>REALBasic</item>
         <item>REBOL</item>
         <item>Revolution</item>
         <item>REXX</item>
         <item>RPG (OS/400)</item>
-        <item>Ruby</item>
         <item>Rust</item>
         <item>S</item>
         <item>S-PLUS</item>
         <item>SAS</item>
         <item>Sather</item>
-        <item>Scala</item>
         <item>Scheme</item>
         <item>Scilab</item>
         <item>Scratch</item>
         <item>sed</item>
         <item>Seed7</item>
         <item>Self</item>
-        <item>Shell</item>
         <item>SIGNAL</item>
         <item>Simula</item>
         <item>Simulink</item>
@@ -393,7 +400,6 @@
         <item>SuperCollider</item>
         <item>TACL</item>
         <item>Tcl</item>
-        <item>Tex</item>
         <item>thinBasic</item>
         <item>TOM</item>
         <item>Transact-SQL</item>
@@ -403,7 +409,6 @@
         <item>VBScript</item>
         <item>Verilog</item>
         <item>VHDL</item>
-        <item>VimL</item>
         <item>Visual Basic .NET</item>
         <item>WebDNA</item>
         <item>Whitespace</item>
@@ -417,6 +422,7 @@
         <item>yacc</item>
         <item>Yorick</item>
         <item>Z shell</item>
+
 
     </string-array>
 </resources>

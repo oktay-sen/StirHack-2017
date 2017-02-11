@@ -24,7 +24,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/hatch"/>
             </FrameLayout><!--
             <TextView
                 android:layout_below="@id/icon_wrapper"
@@ -54,7 +54,7 @@
         <ProgressBar
             android:id="@+id/loading"
             android:layout_gravity="top|center_horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="70dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:indeterminate="true"
@@ -67,9 +67,9 @@
             android:layout_gravity="top|center_horizontal"
             android:textAlignment="center"
             android:keepScreenOn="true"
-            android:textColorHint="#33b5e5"
+            android:textColorHint="@color/textColor"
             android:hint="EVENT CODE"
-            android:textColor="#33b5e5"
+            android:textColor="@color/textColor"
             android:textSize="40sp"
             android:textStyle="bold" />
 
