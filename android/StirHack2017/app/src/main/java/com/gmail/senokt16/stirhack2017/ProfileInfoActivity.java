@@ -13,13 +13,17 @@ import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import java.util.ArrayList;
 
 public class ProfileInfoActivity extends AppCompatActivity {
     EditText name;
     Spinner university;
     RecyclerView languages;
+    Button addLanguage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +47,15 @@ public class ProfileInfoActivity extends AppCompatActivity {
 
         languages = (RecyclerView) findViewById(R.id.languages);
         languages.setLayoutManager(new LinearLayoutManager(this));
-        //languages.setAdapter(new LanguagesAdapter());
+        final ArrayList<Language> langs = new ArrayList<>();
+        languages.setAdapter(new LanguagesAdapter(langs, this));
+        addLanguage = (Button) findViewById(R.id.add_language);
+        addLanguage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                langs.add(null);
+                languages.getAdapter().notifyItemInserted(langs.size()-1);
+            }
+        });
     }
 }
