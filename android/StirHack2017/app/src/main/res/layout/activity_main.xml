@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@color/background"
     tools:context="com.gmail.senokt16.stirhack2017.MainActivity">
 
 
@@ -51,19 +51,6 @@
         android:layout_gravity="bottom"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|center_horizontal"
-            android:textAlignment="center"
-            android:keepScreenOn="true"
-            android:textColorHint="#33b5e5"
-            android:hint="ENTER YOUR CODE"
-            android:textColor="#33b5e5"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
         <ProgressBar
             android:id="@+id/loading"
             android:layout_gravity="top|center_horizontal"
@@ -72,6 +59,19 @@
             android:layout_height="40dp"
             android:indeterminate="true"
             android:indeterminateTint="#88FFFFFF"/>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:textAlignment="center"
+            android:keepScreenOn="true"
+            android:textColorHint="#33b5e5"
+            android:hint="EVENT CODE"
+            android:textColor="#33b5e5"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
     </FrameLayout>
     <!--

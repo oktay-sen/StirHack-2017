@@ -13,11 +13,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gmail.senokt16.stirhack2017.ProfileInfoActivity" />
         </activity>
         <activity
             android:name=".ProfileInfoActivity"
@@ -25,9 +23,11 @@
             android:label="@string/title_activity_profile_info"
             android:parentActivityName=".MainActivity"
             android:theme="@style/FullscreenTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gmail.senokt16.stirhack2017.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

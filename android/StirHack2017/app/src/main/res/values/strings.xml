@@ -5,4 +5,159 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_profile_info">ProfileInfoActivity</string>
+
+    <string-array name="universities">
+        <item>University of Aberdeen</item>
+        <item>Abertay University</item>
+        <item>Aberystwyth University</item>
+        <item>Anglia Ruskin University, Cambridge</item>
+        <item>Arden University, private</item>
+        <item>Aston University, Birmingham</item>
+        <item>Bangor University</item>
+        <item>University of Bath</item>
+        <item>Bath Spa University</item>
+        <item>University of Bedfordshire, Luton and Bedford</item>
+        <item>University of Birmingham</item>
+        <item>Birmingham City University</item>
+        <item>University College Birmingham</item>
+        <item>Bishop Grosseteste University</item>
+        <item>University of Bolton</item>
+        <item>The Arts University Bournemouth</item>
+        <item>Bournemouth University</item>
+        <item>BPP University</item>
+        <item>University of Bradford</item>
+        <item>University of Brighton</item>
+        <item>University of Bristol</item>
+        <item>Brunel University, Uxbridge and London</item>
+        <item>University of Buckingham, private</item>
+        <item>Buckinghamshire New University, High Wycombe</item>
+        <item>University of Cambridge</item>
+        <item>Canterbury Christ Church University, Canterbury</item>
+        <item>Cardiff Metropolitan University </item>
+        <item>Cardiff University</item>
+        <item>University of Chester, Chester and Warrington</item>
+        <item>University of Chichester</item>
+        <item>Coventry University</item>
+        <item>Cranfield University</item>
+        <item>University for the Creative Arts, Canterbury, Epsom, Farnham, Maidstone and Rochester</item>
+        <item>University of Cumbria, Carlisle (main campus), London, Penrith and Ambleside</item>
+        <item>De Montfort University, Leicester</item>
+        <item>University of Derby</item>
+        <item>University of Dundee</item>
+        <item>Durham University, Durham and Stockton-on-Tees</item>
+        <item>Earlham Hall at the University of East Anglia</item>
+        <item>University of East Anglia, Norwich</item>
+        <item>University of East London</item>
+        <item>Edge Hill University, Ormskirk, Lancashire</item>
+        <item>University of Edinburgh</item>
+        <item>Edinburgh Napier University</item>
+        <item>University of Essex, Colchester and Southend-on-Sea</item>
+        <item>University of Exeter</item>
+        <item>Falmouth University</item>
+        <item>University of Glasgow</item>
+        <item>Glasgow Caledonian University</item>
+        <item>University of Gloucestershire, Cheltenham, Gloucester and London</item>
+        <item>Glyndŵr University, Wrexham</item>
+        <item>University of Greenwich</item>
+        <item>Harper Adams University, Newport, Shropshire</item>
+        <item>Heriot-Watt University, Edinburgh and Galashiels</item>
+        <item>University of Hertfordshire, Hatfield</item>
+        <item>University of the Highlands &amp; Islands, Inverness </item>
+        <item>University of Huddersfield, Huddersfield &amp; Barnsley</item>
+        <item>University of Hull, Hull and Scarborough</item>
+        <item>Imperial College London</item>
+        <item>Keele University, Staffordshire</item>
+        <item>University of Kent, Canterbury and Medway</item>
+        <item>Kingston University</item>
+        <item>University of Central Lancashire, Preston and Burnley</item>
+        <item>Lancaster University</item>
+        <item>University of Leeds</item>
+        <item>Leeds Beckett University</item>
+        <item>Leeds Trinity University</item>
+        <item>University of Leicester</item>
+        <item>University of Lincoln, Lincoln, Hull, Riseholme and Holbeach</item>
+        <item>University of Liverpool</item>
+        <item>Liverpool Hope University</item>
+        <item>Liverpool John Moores University</item>
+        <item>University of London</item>
+        <item>Birkbeck, University of London</item>
+        <item>City, University of London</item>
+        <item>Royal Central School of Speech and Drama</item>
+        <item>Courtauld Institute of Art</item>
+        <item>Goldsmiths, University of London</item>
+        <item>Heythrop College</item>
+        <item>Institute of Cancer Research</item>
+        <item>King\'s College London</item>
+        <item>London Business School</item>
+        <item>London School of Economics and Political Science (LSE)</item>
+        <item>London School of Hygiene and Tropical Medicine</item>
+        <item>Queen Mary, University of London</item>
+        <item>Royal Academy of Music</item>
+        <item>Royal Holloway, University of London, Egham</item>
+        <item>Royal Veterinary College</item>
+        <item>St George\'s, University of London</item>
+        <item>School of Oriental and African Studies (SOAS)</item>
+        <item>University College London (UCL)</item>
+        <item>London Metropolitan University</item>
+        <item>London South Bank University</item>
+        <item>Loughborough University</item>
+        <item>University of Manchester</item>
+        <item>Manchester Metropolitan University</item>
+        <item>Middlesex University, London</item>
+        <item>Newcastle University</item>
+        <item>Newman University, Birmingham</item>
+        <item>University of Northampton</item>
+        <item>Northumbria University, Newcastle upon Tyne</item>
+        <item>Norwich University of the Arts</item>
+        <item>University of Nottingham</item>
+        <item>Nottingham Trent University</item>
+        <item>The Open University, Milton Keynes </item>
+        <item>University of Oxford</item>
+        <item>Oxford Brookes University</item>
+        <item>University of Plymouth</item>
+        <item>University of Portsmouth</item>
+        <item>Queen Margaret University, Edinburgh</item>
+        <item>Queen\'s University Belfast</item>
+        <item>University of Reading</item>
+        <item>Regent\'s University London</item>
+        <item>The Robert Gordon University, Aberdeen</item>
+        <item>Roehampton University, London</item>
+        <item>Royal Agricultural University, Cirencester</item>
+        <item>University of Salford</item>
+        <item>University of Sheffield</item>
+        <item>Sheffield Hallam University</item>
+        <item>University of South Wales, merger of University of Wales, Newport and University of Glamorgan</item>
+        <item>University of Southampton</item>
+        <item>Southampton Solent University</item>
+        <item>University of St Andrews</item>
+        <item>University of St Mark &amp; St John, Plymouth</item>
+        <item>St Mary\'s University, Twickenham</item>
+        <item>Staffordshire University, Stoke-on-Trent, Stafford and Lichfield</item>
+        <item>University of Stirling, Bridge of Allan</item>
+        <item>University of Strathclyde, Glasgow</item>
+        <item>University of Suffolk, Ipswich, Bury St Edmunds, Great Yarmouth, Lowestoft</item>
+        <item>University of Sunderland</item>
+        <item>University of Surrey, Guildford</item>
+        <item>University of Sussex, Falmer and Brighton</item>
+        <item>Swansea University</item>
+        <item>Teesside University, Middlesbrough and Darlington</item>
+        <item>University of the Arts London</item>
+        <item>Ulster University, Coleraine, Jordanstown, Magee and Belfast</item>
+        <item>University of Law</item>
+        <item>University of Wales, Trinity Saint David (UWTSD)</item>
+        <item>University of Warwick, Coventry</item>
+        <item>University of the West of England, Bristol</item>
+        <item>University of the West of Scotland, Paisley, Hamilton, Ayr &amp; Dumfries</item>
+        <item>University of West London, Ealing and Brentford</item>
+        <item>University of Westminster, London</item>
+        <item>University of Winchester</item>
+        <item>University of Wolverhampton</item>
+        <item>University of Worcester</item>
+        <item>University of York</item>
+        <item>York St John University</item>
+        <item>ifs University College, London</item>
+        <item>University College of Estate Management, Reading</item>
+        <item>Writtle University College</item>
+
+    </string-array>
 </resources>
