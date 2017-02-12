@@ -63,7 +63,7 @@ public class Server {
                             }
                         });
                     }
-                } catch (IOException e) {Log.v("SERVER_LISTEN", "", e);}
+                } catch (IOException e) {/*Log.v("SERVER_LISTEN", "", e);*/}
             }
         }
     };

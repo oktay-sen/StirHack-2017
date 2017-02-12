@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         setContentView(R.layout.activity_main);
+        Log.d("SERVER", "Server init call.");
         Server.init();
         Server.addConnection(new Connection(this) {
             @Override
