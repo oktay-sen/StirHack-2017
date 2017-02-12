@@ -24,6 +24,7 @@ import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class ProfileInfoActivity extends AppCompatActivity {
@@ -31,6 +32,7 @@ public class ProfileInfoActivity extends AppCompatActivity {
     Spinner university;
     RecyclerView languages;
     Button addLanguage, save;
+    ArrayAdapter<String> adapter;
 
     User currentUser;
 
@@ -93,12 +95,12 @@ public class ProfileInfoActivity extends AppCompatActivity {
             }
         });
         //Force typing uppercase. (From: http://stackoverflow.com/questions/15961813/in-android-edittext-how-to-force-writing-uppercase)
-        name.setFilters(new InputFilter[] {new InputFilter.AllCaps()});
+        username.setFilters(new InputFilter[] {new InputFilter.AllCaps()});
         university = (Spinner) findViewById(R.id.university);
 
         final List<String> unis = Arrays.asList(getResources().getStringArray(R.array.universities));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.universities));
+        adapter = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.universities));
         adapter.setDropDownViewResource(R.layout.spinner_item);
         university.setAdapter(adapter);
         university.setPopupBackgroundResource(R.drawable.spinner_bg);
@@ -138,11 +140,30 @@ public class ProfileInfoActivity extends AppCompatActivity {
                         && currentUser.name != null
                         && currentUser.university != null) {
                     //TODO: save this user.
-                    getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE).edit().putString("user", currentUser.username).commit();
-                    Intent i = new Intent(ProfileInfoActivity.this, MainActivity.class);
-                    i.putExtra("user", currentUser);
-                    //TODO: transition animation.
-                    startActivity(i);
+                    save.setEnabled(false);
+                    List<String> langNames = new ArrayList<>();
+                    List<Language> langs = new ArrayList<>();
+                    for (Language l : currentUser.languages) {
+                        if (!langNames.contains(l.name)) {
+                            langNames.add(l.name);
+                            langs.add(l);
+                        }
+                    }
+                    currentUser.languages = langs;
+                    adapter.notifyDataSetChanged();
+
+                    Server.request(ProfileInfoActivity.this, "addUser", currentUser.toString()).onResponse(new Server.OnResponseListener() {
+                        @Override
+                        public void onResponse(String[] params) {
+                            Intent i = new Intent(ProfileInfoActivity.this, MainActivity.class);
+                            i.putExtra("user", currentUser);
+                            i.putExtra("userId", params[0]);
+                            //TODO: transition animation.
+                            startActivity(i);
+                        }
+                    });
+
+                    //getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE).edit().putString("user", currentUser.username).commit();
                 }
             }
         });

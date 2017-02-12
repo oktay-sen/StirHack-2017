@@ -27,8 +27,9 @@ public class FindOrCreateActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(FindOrCreateActivity.this, TeamListActivity.class);
-                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(FindOrCreateActivity.this, logo, "appIcon");
-                startActivity(i, options.toBundle());
+                //ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(FindOrCreateActivity.this, logo, "appIcon");
+                //startActivity(i, options.toBundle());
+                startActivity(i);
             }
         });
     }

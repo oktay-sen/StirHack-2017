@@ -47,16 +47,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         setContentView(R.layout.activity_main);
-        Log.d("SERVER", "Server init call.");
-        Server.init();
-        Server.addConnection(new Connection(this) {
-            @Override
-            public void onMessageReceived(String msg) {
-                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                Server.send(msg);
-            }
-        });
-        Server.send("LOOOOOL");
 
         codeText = (EditText) findViewById(R.id.code);
         codeText.setFilters(new InputFilter[] {new InputFilter.AllCaps()});

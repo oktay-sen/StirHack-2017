@@ -21,40 +21,34 @@
             android:transitionName="appIcon"/>
     </FrameLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/team_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"/>
+
     <LinearLayout
-        app:layout_heightPercent="55%"
+        android:id="@+id/fullscreen_content_controls"
+        style="?metaButtonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:orientation="vertical">
-        <ImageButton
-            android:id="@+id/find_team"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:layout_gravity="top|center_horizontal"
-            android:src="@drawable/find_team"
-            android:keepScreenOn="true"/>
-
-        <TextView
-            android:layout_width="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <EditText
+            android:id="@+id/join_code"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="or"
-            android:textStyle="italic"
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:hint="ENTER JOIN CODE"
             android:textSize="25sp"
-            android:textColor="@android:color/white"/>
+            android:textStyle="bold"/>
 
-        <ImageButton
-            android:id="@+id/create_team"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:layout_gravity="top|center_horizontal"
-            android:src="@drawable/create_a_team"
-            android:keepScreenOn="true"/>
     </LinearLayout>
 
 </android.support.percent.PercentFrameLayout>
