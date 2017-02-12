@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -18,9 +19,12 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
     private List<Language> list;
     private Context context;
 
+    List<String> langs;
+
     public LanguagesAdapter(List<Language> languages, Context context) {
         list = languages;
         this.context = context;
+        langs = Arrays.asList(context.getResources().getStringArray(R.array.languages));
     }
 
     @Override
@@ -32,7 +36,6 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        List<String> langs = Arrays.asList(context.getResources().getStringArray(R.array.languages));
         Language l;
         if (list.get(position) == null) {
             l = new Language();
@@ -45,8 +48,9 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
 
 
         holder.language.setSelection(langs.indexOf(l.name));
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(context, R.layout.spinner_item_2, context.getResources().getStringArray(R.array.languages));
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(context, R.layout.spinner_item_2, langs.toArray(new String[1]));
         holder.language.setAdapter(adapter);
+
         holder.level.setMax(2);
         holder.level.setProgress(l.level);
 

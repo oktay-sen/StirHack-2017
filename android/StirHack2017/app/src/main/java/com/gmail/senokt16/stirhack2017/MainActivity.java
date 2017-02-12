@@ -3,6 +3,7 @@ package com.gmail.senokt16.stirhack2017;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -45,7 +46,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         setContentView(R.layout.activity_main);
-
+        Server.init();
+        Server.addConnection(new Connection(this) {
+            @Override
+            public void onMessageReceived(String msg) {
+                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                Server.send(msg);
+            }
+        });
+        Server.send("LOOOOOL");
 
         codeText = (EditText) findViewById(R.id.code);
         codeText.setFilters(new InputFilter[] {new InputFilter.AllCaps()});

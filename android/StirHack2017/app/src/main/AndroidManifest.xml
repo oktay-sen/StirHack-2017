@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.senokt16.stirhack2017">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/hatch"
@@ -29,13 +30,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gmail.senokt16.stirhack2017.MainActivity" />
         </activity>
-        <activity android:name=".FindOrCreateActivity"
+        <activity
+            android:name=".FindOrCreateActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:parentActivityName=".MainActivity"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gmail.senokt16.stirhack2017.MainActivity" />
+        </activity>
+        <activity android:name=".TeamListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".FindOrCreateActivity"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gmail.senokt16.stirhack2017.FindOrCreateActivity" />
         </activity>
     </application>
 
